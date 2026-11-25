@@ -1,0 +1,304 @@
+
+/* =========================
+   LOGIN & REGISTER OVERLAY
+========================= */
+
+.auth-container {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.65);
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px;
+
+  z-index: 2000;
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   AUTH BOX
+========================= */
+
+.auth-box {
+  background: white;
+
+  width: 100%;
+  max-width: 420px;
+
+  padding: 35px;
+
+  border-radius: 18px;
+
+  position: relative;
+
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+
+  box-sizing: border-box;
+}
+
+/* =========================
+   AUTH HEADING
+========================= */
+
+.auth-box h2 {
+  text-align: center;
+
+  color: #e65100;
+
+  font-size: 28px;
+
+  margin-bottom: 25px;
+}
+
+/* =========================
+   CLOSE BUTTON
+========================= */
+
+.close-btn {
+  position: absolute;
+
+  top: 12px;
+  right: 15px;
+
+  width: 35px;
+  height: 35px;
+
+  border: none;
+
+  border-radius: 50%;
+
+  background: #fff0e6;
+
+  color: #e65100;
+
+  font-size: 25px;
+
+  cursor: pointer;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  transition: 0.3s;
+}
+
+.close-btn:hover {
+  background: #e65100;
+
+  color: white;
+}
+
+/* =========================
+   FORM
+========================= */
+
+.auth-box form {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+/* INPUT FIELDS */
+
+.auth-box input {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border: 1px solid #ddd;
+
+  border-radius: 10px;
+
+  font-size: 15px;
+
+  outline: none;
+
+  box-sizing: border-box;
+
+  transition: 0.3s;
+}
+
+.auth-box input:focus {
+  border-color: #e65100;
+
+  box-shadow: 0 0 5px rgba(230, 81, 0, 0.2);
+}
+
+/* =========================
+   SUBMIT BUTTON
+========================= */
+
+.auth-box form button {
+  width: 100%;
+
+  padding: 13px;
+
+  background: #e65100;
+
+  color: white;
+
+  border: none;
+
+  border-radius: 10px;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.auth-box form button:hover {
+  background: #bf360c;
+}
+
+/* =========================
+   AUTH TEXT
+========================= */
+
+.auth-box p {
+  text-align: center;
+
+  font-size: 14px;
+
+  color: #666;
+
+  margin-top: 20px;
+}
+
+/* SWITCH LOGIN / REGISTER */
+
+.auth-box p button {
+  background: none;
+
+  border: none;
+
+  color: #e65100;
+
+  font-weight: bold;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+.auth-box p button:hover {
+  text-decoration: underline;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 500px) {
+
+  .auth-box {
+    padding: 25px 20px;
+  }
+
+  .auth-box h2 {
+    font-size: 24px;
+  }
+
+}
+
+.preference-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.preference-buttons button {
+  width: 100%;
+  padding: 14px;
+  background-color: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.preference-buttons button:hover {
+  background-color: #e85d2a;
+}
+
+/* CAPTCHA */
+
+.captcha-container {
+  width: 100%;
+  margin: 15px 0;
+}
+
+.captcha-container label {
+  display: block;
+  margin-bottom: 10px;
+
+  color: #333;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.captcha-code {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 12px 15px;
+  margin-bottom: 12px;
+
+  background: #fff3e9;
+  border: 1px dashed #e76f35;
+  border-radius: 8px;
+}
+
+.captcha-code span {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 6px;
+
+  color: #e76f35;
+  user-select: none;
+}
+
+.captcha-code button {
+  border: none;
+  background: transparent;
+
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.captcha-container input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+
+  outline: none;
+}
+
+.captcha-container input:focus {
+  border-color: #e76f35;
+}

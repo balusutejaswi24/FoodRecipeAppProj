@@ -1,0 +1,77 @@
+
+.collections-page {
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 25px;
+}
+
+.collections-page h2 {
+  color: #e85d32;
+  text-align: center;
+}
+
+.collection-form {
+  background: #fffaf6;
+  padding: 25px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+}
+
+.collection-form > input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e5cfc2;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.collection-recipe-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 10px;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+.collection-recipe-option {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.collection-form button,
+.collection-card button,
+.collection-back {
+  background: #ff7043;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.collections-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.collection-card {
+  background: #fff5ec;
+  border: 1px solid #f1d7c4;
+  border-radius: 14px;
+  padding: 20px;
+}
+
+.collection-card h3 {
+  color: #e85d32;
+}
+
+.collection-card ul {
+  padding-left: 20px;
+}

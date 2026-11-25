@@ -1,0 +1,73 @@
+
+.recipe-reviews {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff8f0;
+  border-radius: 12px;
+}
+
+.recipe-reviews h3 {
+  margin-bottom: 15px;
+  color: #8b4513;
+}
+
+.recipe-reviews form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.recipe-reviews label {
+  font-weight: bold;
+}
+
+.recipe-reviews select,
+.recipe-reviews textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+.recipe-reviews textarea {
+  resize: vertical;
+}
+
+.recipe-reviews form button {
+  padding: 12px;
+  background: #e87522;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.recipe-reviews form button:hover {
+  background: #c95d13;
+}
+
+.review-item {
+  margin-top: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid #eee;
+}
+
+.review-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.review-item p {
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+
+.review-item small {
+  color: #777;
+}

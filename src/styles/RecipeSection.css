@@ -1,0 +1,214 @@
+
+/* =========================
+   RECIPE SECTION
+========================= */
+
+.recipe-section {
+  padding: 60px 30px;
+  background: #fffaf5;
+  text-align: center;
+}
+
+.recipe-section h2 {
+  font-size: 32px;
+  color: #e65100;
+  margin-bottom: 10px;
+}
+
+.recipe-description {
+  color: #666;
+  font-size: 16px;
+  margin-bottom: 25px;
+}
+
+/* =========================
+   SEARCH BAR
+========================= */
+
+.recipe-search {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 14px 20px;
+
+  border: 1px solid #ddd;
+  border-radius: 30px;
+
+  font-size: 16px;
+
+  outline: none;
+
+  margin: 20px auto;
+
+  display: block;
+
+  box-sizing: border-box;
+}
+
+.recipe-search:focus {
+  border-color: #e65100;
+  box-shadow: 0 0 5px rgba(230, 81, 0, 0.2);
+}
+
+/* =========================
+   CATEGORY BUTTONS
+========================= */
+
+.category-buttons {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  flex-wrap: wrap;
+
+  gap: 12px;
+
+  margin: 25px 0 35px;
+}
+
+.category-btn {
+  padding: 10px 22px;
+
+  border: 1px solid #e65100;
+
+  border-radius: 30px;
+
+  background: white;
+
+  color: #e65100;
+
+  font-size: 14px;
+
+  font-weight: 500;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+  background: #fff0e6;
+
+  transform: translateY(-2px);
+}
+
+.category-btn.active {
+  background: #e65100;
+
+  color: white;
+
+  border-color: #e65100;
+}
+
+/* =========================
+   RECIPE GRID
+========================= */
+
+.recipe-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 25px;
+
+  max-width: 1400px;
+
+  margin: 0 auto;
+}
+
+/* =========================
+   NO RECIPES MESSAGE
+========================= */
+
+.no-recipes {
+  grid-column: 1 / -1;
+
+  text-align: center;
+
+  font-size: 18px;
+
+  color: #777;
+
+  padding: 40px 10px;
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+  .recipe-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  .recipe-section {
+    padding: 40px 15px;
+  }
+
+  .recipe-section h2 {
+    font-size: 26px;
+  }
+
+  .recipe-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 15px;
+  }
+
+  .category-buttons {
+    gap: 8px;
+  }
+
+  .category-btn {
+    padding: 9px 15px;
+
+    font-size: 13px;
+  }
+
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 450px) {
+
+  .recipe-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+.recipe-extra-actions {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.recipe-extra-actions button {
+  background: #ff7043;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.recipe-extra-actions button:hover {
+  background: #e85d32;
+}
+

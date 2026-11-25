@@ -1,0 +1,275 @@
+
+/* ADMIN LOGIN */
+
+.admin-login-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.65);
+}
+
+.admin-login-box {
+  position: relative;
+  width: 100%;
+  max-width: 420px;
+
+  padding: 35px;
+  box-sizing: border-box;
+
+  background: white;
+  border-radius: 18px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+.admin-login-box h2 {
+  color: #e76f35;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.admin-login-box > p {
+  text-align: center;
+  color: #777;
+  margin-bottom: 25px;
+}
+
+.admin-close {
+  position: absolute;
+  top: 12px;
+  right: 15px;
+
+  border: none;
+  background: transparent;
+
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.admin-login-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.admin-login-box input {
+  width: 100%;
+  padding: 13px;
+
+  box-sizing: border-box;
+
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+}
+
+.admin-login-box input:focus {
+  border-color: #e76f35;
+}
+
+.admin-login-box form button {
+  padding: 13px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #e76f35;
+  color: white;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-login-box form button:hover {
+  background: #cf5b25;
+}
+
+.admin-error {
+  color: #d93025;
+  font-size: 14px;
+}
+
+/* ADMIN DASHBOARD */
+
+.admin-dashboard {
+  min-height: 80vh;
+
+  padding: 40px 5%;
+  box-sizing: border-box;
+
+  background: #fffaf5;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 20px;
+  margin-bottom: 35px;
+}
+
+.admin-header h1 {
+  color: #292929;
+  margin-bottom: 8px;
+}
+
+.admin-header p {
+  color: #777;
+  margin: 0;
+}
+
+.admin-logout {
+  padding: 12px 25px;
+
+  border: none;
+  border-radius: 8px;
+
+  background: #e76f35;
+  color: white;
+
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.admin-logout:hover {
+  background: #cf5b25;
+}
+
+/* STATISTICS */
+
+.admin-stats {
+  display: grid;
+
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.admin-card {
+  padding: 25px;
+
+  background: white;
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.admin-card span {
+  font-size: 30px;
+}
+
+.admin-card h3 {
+  color: #777;
+  font-size: 15px;
+  margin: 15px 0 8px;
+}
+
+.admin-card h2 {
+  color: #e76f35;
+  font-size: 30px;
+  margin: 0;
+}
+
+/* HISTORY */
+
+.admin-history {
+  padding: 25px;
+  margin-bottom: 30px;
+
+  background: white;
+  border-radius: 15px;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+.admin-history h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.admin-empty {
+  color: #777;
+  padding: 15px 0;
+}
+
+/* TABLE */
+
+.admin-table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 500px;
+}
+
+.admin-table th {
+  background: #fff3e9;
+  color: #333;
+
+  text-align: left;
+  padding: 15px;
+}
+
+.admin-table td {
+  padding: 15px;
+
+  color: #555;
+  border-bottom: 1px solid #eee;
+}
+
+.admin-table tr:hover {
+  background: #fffaf5;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+  .admin-dashboard {
+    padding: 25px 4%;
+  }
+
+  .admin-header {
+    align-items: flex-start;
+  }
+
+  .admin-header h1 {
+    font-size: 25px;
+  }
+
+  .admin-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .admin-card {
+    padding: 18px;
+  }
+
+  .admin-history {
+    padding: 15px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .admin-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .admin-login-box {
+    padding: 30px 20px;
+  }
+
+}
